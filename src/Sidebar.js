@@ -3,12 +3,20 @@ import './Sidebar.css';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import AddIcon from '@material-ui/icons/Add';
 import SidebarChannel from './SidebarChannel';
+import SignalCellularAltIcon from '@material-ui/icons/SignalCellularAlt';
+import InfoOutlinedIcon from '@material-ui/icons/InfoOutlined';
+import CallIcon from '@material-ui/icons/Call';
+import {Avatar} from '@material-ui/core';
+import MicIcon from '@material-ui/icons/Mic';
+import HeadsetIcon from '@material-ui/icons/Headset';
+import SettingsIcon from '@material-ui/icons/Settings';
+
 function Sidebar() {
   return (
     <div className='sidebar'>
 
         <div className='sidebar_top'>
-            <h3>Clever programmer </h3>
+            <h3>MeetRajput#6075 </h3>
             <ExpandMoreIcon/>
         </div>
         
@@ -25,6 +33,30 @@ function Sidebar() {
                 <SidebarChannel/>
                 <SidebarChannel/>
                 <SidebarChannel/>
+            </div>
+        </div>
+        <div className="sidebar_voice">
+            <SignalCellularAltIcon className='sidebar_voiceIcon' fontSize='large'/>
+            <div className="sidebar_voiceInfo">
+                <h3>Voice connected</h3>
+                <p>Stream</p>
+            </div>
+            <div className="sidebar_voiceIcons">
+                <InfoOutlinedIcon/>
+                <CallIcon/>
+            </div>
+        </div>
+
+        <div className="sidebar_profile">
+            <Avatar/>
+            <div className="sidebar_profileInfo">
+                <h3>@meet_singh_07</h3>
+                <p>#ID</p>
+            </div>
+            <div className="sidebar_profileIcons">
+                <MicIcon/>
+                <HeadsetIcon/>
+                <SettingsIcon/>
             </div>
         </div>
     </div>
